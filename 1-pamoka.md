@@ -72,6 +72,16 @@ System.out.println(greitis);
 ```java
 Scanner in = new Scanner(System.in);
 
+System.out.println("Koks jusu vardas?");
+String vardas = in.nextLine();
+
+System.out.println("Kokia jusu pavarde?");
+String pavarde = in.nextLine();
+
+System.out.println("Kur gimete?");
+String gimVieta = in.nextLine();
+
+System.out.println(vardas + " " + pavarde + " deginasi " + gimVieta);
 ```
 
 7. Parašyti programą, kuri prašo įvesti du skaičius ir patikrina ar jie lygūs. Rezultatą išvesti tokiu formatu: 
@@ -86,7 +96,16 @@ int sk1 = in.nextInt();
 System.out.println("Iveskite antra skaiciu:");
 int sk2 = in.nextInt();
 
-
+if(sk1 == sk2){
+    System.out.println(sk1 + " ir " + sk2 + " yra lygus.");
+}
+else {
+    System.out.println(sk1 + " ir " + sk2 + " yra nelygus.");
+}
+```
+ARBA galite naudoti trinarį operatorių
+```java
+System.out.println(sk1 + " ir " + sk2 + ((sk1 == sk2) ? " yra lygus." : " yra nelygus."));
 ```
 
 8. Parašyti programą, kuri prašo įvesti 3 skaičius ir nustato didžiausią iš jų
@@ -118,7 +137,7 @@ else {
 System.out.println(didziausias);
 ```
 
-9. Parašyti programą, kuri prašo įvesti mokinio pažymį ir ekrane išspausdina jo apibūdinimą. (10 – puiku, 9-8 – labai gerai, 7-6- gerai, 5 - vidutiniškai, 4 – bent teigiamas, 3-2-1 – labai blogai)
+9. Parašyti programą, kuri prašo įvesti mokinio pažymį ir ekrane išspausdina jo apibūdinimą. (10 – puiku, 9-8 – labai gerai, 7-6 - gerai, 5 - vidutiniškai, 4 – bent teigiamas, 3-2-1 – labai blogai)
 
 ```java
 Scanner in = new Scanner(System.in);
@@ -126,7 +145,33 @@ Scanner in = new Scanner(System.in);
 System.out.println("Iveskite pazymi:");
 int paz = in.nextInt();
 
-
+switch (paz) {
+    case 10:
+        System.out.println("Puiku");
+        break;
+    case 9:
+    case 8:
+        System.out.println("Labai gerai");
+        break;
+    case 7:
+    case 6:
+        System.out.println("Gerai");
+        break;
+    case 5:
+        System.out.println("Viduitniškai");
+        break;
+    case 4:
+        System.out.println("Bent teigiamas");
+        break;
+    case 3:
+    case 2:
+    case 1:
+        System.out.println("Labai blogai");
+        break;
+    default:
+        System.out.println("Tokio pazymio nera");
+        break;
+}
 ```
 
 10. Parašyti programą, kuri nuskaito įvestą skaičių ir patikrintų ar jis yra lyginis ar nelyginis.
@@ -137,8 +182,14 @@ Scanner in = new Scanner(System.in);
 System.out.println("Iveskite skaiciu:");
 int sk = in.nextInt();
 
-
+if(sk  % 2 == 0){
+    System.out.println("Lyginis");
+} 
+else {
+    System.out.println("Neyginis");
+}
 ```
+
 11. Parašyti programą, kuri nuskaito savaitės dienos numerį ir atspausdina jos žodinį pavadinimą ekrane.
 
 ```java
@@ -149,6 +200,7 @@ int savDienosNr = in.nextInt();
 
 
 ```
+
 12. Parašyti programą kalkuliatorių, kuri nuskaito 2 skaičius, nuskaito matematinį veiksmą, atlieka veiksmą ir atspausdina rezultatą ekrane tokiu formatu:
 “{pirmas skaicius} {matematinis veiksmas} {antras skaičius} = {rezultatas}”
 
@@ -166,6 +218,7 @@ char sk3 = in.nextChar();
 
 
 ```
+
 13. Patikrinkite, ar įvesto keturženklio skaičiaus x pirmas skaitmuo yra lyginis.
 
 ```java
