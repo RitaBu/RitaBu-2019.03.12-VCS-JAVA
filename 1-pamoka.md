@@ -1,6 +1,6 @@
 1. Parašyti programą, kuri atspausdina ekrane jūsų vardą, pavardę ir amžių iš naujų eilučių.
 
-```Java
+```java
  System.out.println("Jonas");
  System.out.println("Jonaitis");
  System.out.println("29");
