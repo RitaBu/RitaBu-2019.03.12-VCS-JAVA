@@ -158,7 +158,7 @@ switch (paz) {
         System.out.println("Gerai");
         break;
     case 5:
-        System.out.println("Viduitniškai");
+        System.out.println("Vidutiniškai");
         break;
     case 4:
         System.out.println("Bent teigiamas");
@@ -233,15 +233,34 @@ switch (savDienosNr) {
 Scanner in = new Scanner(System.in);
 
 System.out.println("Iveskite pirma skaiciu:");
-int sk1 = in.nextInt();
+int skaicius1 = in.nextInt();
 
 System.out.println("Iveskite antra skaiciu:");
-int sk2 = in.nextInt();
+int skaicius2 = in.nextInt();
 
 System.out.println("Iveskite operatoriu:");
-char sk3 = in.nextChar();
+String operacija = in.nextLine();
 
-
+switch(operacija){
+    case "+":
+        System.out.println(skaicius1 + " + " + skaicius2 + " = " + (skaicius1 + skaicius2));
+        break;
+    case "-":
+        System.out.println(skaicius1 + " - " + skaicius2 + " = " + (skaicius1 + skaicius2));
+        break;
+    case "*":
+        System.out.println(skaicius1 + " * " + skaicius2 + " = " + (skaicius1 + skaicius2));
+        break;
+    case "/":
+        System.out.println(skaicius1 + " / " + skaicius2 + " = " + (skaicius1 + skaicius2));
+        break;
+    case "%":
+        System.out.println(skaicius1 + " % " + skaicius2 + " = " + (skaicius1 + skaicius2));
+        break;
+    default:
+        System.out.println("Nesuprantu tokios operacijos.");
+        break;
+}
 ```
 
 13. Patikrinkite, ar įvesto keturženklio skaičiaus x pirmas skaitmuo yra lyginis.
