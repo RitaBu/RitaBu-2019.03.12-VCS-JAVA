@@ -239,9 +239,9 @@ System.out.println("Iveskite antra skaiciu:");
 int skaicius2 = in.nextInt();
 
 System.out.println("Iveskite operatoriu:");
-String operacija = in.nextLine();
+String operatorius = in.nextLine();
 
-switch(operacija){
+switch(operatorius){
     case "+":
         System.out.println(skaicius1 + " + " + skaicius2 + " = " + (skaicius1 + skaicius2));
         break;
