@@ -271,5 +271,11 @@ Scanner in = new Scanner(System.in);
 System.out.println("Iveskite skaiciu:");
 int sk = in.nextInt();
 
-
+int pirmasSkaitmuo = sk / 1000;
+        
+if(pirmasSkaitmuo % 2 == 0) {
+    System.out.println("lyginis");
+} else {
+    System.out.println("nelyginis");
+}
 ```
