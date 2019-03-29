@@ -1,4 +1,4 @@
-###```while``` ciklas
+## ```while``` ciklas
 
 1. Parašykite programą naudojant while ciklą, kuri išvestų 10 pirmų natūraliųjų skaičių.
 
