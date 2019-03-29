@@ -124,5 +124,30 @@ for (int i = 1; i <= piramidesAukstis; i++) {
     System.out.println();
 }
 ```
-## masyvai
+## ```break``` ir ```continue```
 
+10. Parašykite programą, kuri iteruoja per pirmus 20 natūraliųjų skaičių, skaičiuoja jų sumą ir išeina iš ciklo, kai suma tampa didesnė už 15. (```break```)
+
+```java
+for (int i = 1; i < 20; i++) {
+    if(suma > 15){
+        break;
+    }
+    suma += i;
+    System.out.println(i + ": " + suma);
+}
+```
+
+11. Parašykite programą, kuri išves visus skaičius nuo 1 iki 17, išskyrus 7 ir 13. (```continue```)
+
+```java
+for (int i = 1; i <= 17; i++) {
+    if(i == 7 || i == 13) {
+        continue;
+    }
+    System.out.println(i);
+}
+```
+#Masyvai
+
+12. 
