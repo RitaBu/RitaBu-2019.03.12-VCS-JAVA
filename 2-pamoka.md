@@ -68,5 +68,61 @@ System.out.println("Skaicius turi " + skaitmenuSkaicius + " skaitmenu.");
 
 ## ```for``` ciklas
 
+6. Parašyti programą naudojant for ciklą, kuri suskaičiuoja pirmų 10 natūraliųjų skaičių sumą.
 
+```java
+int suma = 0;
+for (int i = 1; i <= 10; i++) {
+    suma += i;
+}
+System.out.println(suma);
+```
+
+7. Parašyti programą naudojant for ciklą, kuri prašo įvesti natūralųjį skaičių ir atspausdina visus žemesnius natūraliuosius skaičius mažėjančia tvarka.
+
+```java
+System.out.println("Iveskite skaiciu");
+int sk = in.nextInt();
+
+for (int i = sk; i > 0; i--) {
+    System.out.println(i);
+}
+```
+
+8. Parašyti programą naudojant for ciklą, kuri prašo įvesti skaičių ir atspausdina jo daugybos lentelę.
+
+```java
+System.out.println("Iveskite skaiciu");
+int skaicius = in.nextInt();
+
+for (int i = 1; i <= 10; i++) {
+    System.out.println(skaicius + "x" + i + "=" + skaicius * i);
+}
+```
+
+9. Parašyti programą naudojant for ciklą, kuri prašo įvesti piramidės aukštį ir atspausdina skaičių piramidę tokiu formatu:
+```
+1
+2 3
+4 5 6
+7 8 9 10
+```
+
+```java
+System.out.println("Iveskite piramides auksti:");
+int piramidesAukstis = in.nextInt();
+
+int skaicius = 1;
+
+for (int i = 1; i <= piramidesAukstis; i++) {
+    for (int j = 1; j <= i; j++) {
+        System.out.print(skaicius + " ");
+        skaicius++;
+
+
+    }
+    System.out.println();
+}
+```
 ## masyvai
+
