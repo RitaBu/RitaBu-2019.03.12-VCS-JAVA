@@ -1,4 +1,4 @@
-package pamoka.pirma;
+package pamoka.trecia; //nepamirškit pakeist į savo package'o pavadinimą
 
 public class Main {
 
